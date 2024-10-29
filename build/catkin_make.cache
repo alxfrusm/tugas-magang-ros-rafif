@@ -1,0 +1,2 @@
+tugas_ros
+-DCATKIN_DEVEL_PREFIX=/home/rafif/tugasros/devel -DCMAKE_INSTALL_PREFIX=/home/rafif/tugasros/install -G Unix Makefiles

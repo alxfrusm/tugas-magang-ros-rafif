@@ -1,0 +1,8 @@
+prefix=/home/rafif/tugasros/devel
+
+Name: tugas_ros
+Description: Description of tugas_ros
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
