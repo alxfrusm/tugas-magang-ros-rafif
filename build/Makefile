@@ -415,17 +415,17 @@ rosgraph_msgs_generate_messages_cpp/fast:
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named tugasros
+# Target rules for targets named listener
 
 # Build rule for target.
-tugasros: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tugasros
-.PHONY : tugasros
+listener: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 listener
+.PHONY : listener
 
 # fast build rule for target.
-tugasros/fast:
-	$(MAKE) -f tugas_ros/CMakeFiles/tugasros.dir/build.make tugas_ros/CMakeFiles/tugasros.dir/build
-.PHONY : tugasros/fast
+listener/fast:
+	$(MAKE) -f tugas_ros/CMakeFiles/listener.dir/build.make tugas_ros/CMakeFiles/listener.dir/build
+.PHONY : listener/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_cpp
@@ -452,6 +452,19 @@ rosgraph_msgs_generate_messages_eus: cmake_check_build_system
 rosgraph_msgs_generate_messages_eus/fast:
 	$(MAKE) -f tugas_ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make tugas_ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named publisher
+
+# Build rule for target.
+publisher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 publisher
+.PHONY : publisher
+
+# fast build rule for target.
+publisher/fast:
+	$(MAKE) -f tugas_ros/CMakeFiles/publisher.dir/build.make tugas_ros/CMakeFiles/publisher.dir/build
+.PHONY : publisher/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_lisp
@@ -524,9 +537,10 @@ help:
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... tugasros"
+	@echo "... listener"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... publisher"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"

@@ -318,19 +318,19 @@ rosgraph_msgs_generate_messages_cpp/fast:
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-tugas_ros/CMakeFiles/tugasros.dir/rule:
-	cd /home/rafif/tugasros/build && $(MAKE) -f CMakeFiles/Makefile2 tugas_ros/CMakeFiles/tugasros.dir/rule
-.PHONY : tugas_ros/CMakeFiles/tugasros.dir/rule
+tugas_ros/CMakeFiles/listener.dir/rule:
+	cd /home/rafif/tugasros/build && $(MAKE) -f CMakeFiles/Makefile2 tugas_ros/CMakeFiles/listener.dir/rule
+.PHONY : tugas_ros/CMakeFiles/listener.dir/rule
 
 # Convenience name for target.
-tugasros: tugas_ros/CMakeFiles/tugasros.dir/rule
+listener: tugas_ros/CMakeFiles/listener.dir/rule
 
-.PHONY : tugasros
+.PHONY : listener
 
 # fast build rule for target.
-tugasros/fast:
-	cd /home/rafif/tugasros/build && $(MAKE) -f tugas_ros/CMakeFiles/tugasros.dir/build.make tugas_ros/CMakeFiles/tugasros.dir/build
-.PHONY : tugasros/fast
+listener/fast:
+	cd /home/rafif/tugasros/build && $(MAKE) -f tugas_ros/CMakeFiles/listener.dir/build.make tugas_ros/CMakeFiles/listener.dir/build
+.PHONY : listener/fast
 
 # Convenience name for target.
 tugas_ros/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
@@ -361,6 +361,21 @@ rosgraph_msgs_generate_messages_eus: tugas_ros/CMakeFiles/rosgraph_msgs_generate
 rosgraph_msgs_generate_messages_eus/fast:
 	cd /home/rafif/tugasros/build && $(MAKE) -f tugas_ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make tugas_ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+tugas_ros/CMakeFiles/publisher.dir/rule:
+	cd /home/rafif/tugasros/build && $(MAKE) -f CMakeFiles/Makefile2 tugas_ros/CMakeFiles/publisher.dir/rule
+.PHONY : tugas_ros/CMakeFiles/publisher.dir/rule
+
+# Convenience name for target.
+publisher: tugas_ros/CMakeFiles/publisher.dir/rule
+
+.PHONY : publisher
+
+# fast build rule for target.
+publisher/fast:
+	cd /home/rafif/tugasros/build && $(MAKE) -f tugas_ros/CMakeFiles/publisher.dir/build.make tugas_ros/CMakeFiles/publisher.dir/build
+.PHONY : publisher/fast
 
 # Convenience name for target.
 tugas_ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
@@ -407,32 +422,59 @@ rosgraph_msgs_generate_messages_py/fast:
 	cd /home/rafif/tugasros/build && $(MAKE) -f tugas_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make tugas_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
-src/main.o: src/main.cpp.o
+src/listener.o: src/listener.cpp.o
 
-.PHONY : src/main.o
+.PHONY : src/listener.o
 
 # target to build an object file
-src/main.cpp.o:
-	cd /home/rafif/tugasros/build && $(MAKE) -f tugas_ros/CMakeFiles/tugasros.dir/build.make tugas_ros/CMakeFiles/tugasros.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/listener.cpp.o:
+	cd /home/rafif/tugasros/build && $(MAKE) -f tugas_ros/CMakeFiles/listener.dir/build.make tugas_ros/CMakeFiles/listener.dir/src/listener.cpp.o
+.PHONY : src/listener.cpp.o
 
-src/main.i: src/main.cpp.i
+src/listener.i: src/listener.cpp.i
 
-.PHONY : src/main.i
+.PHONY : src/listener.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	cd /home/rafif/tugasros/build && $(MAKE) -f tugas_ros/CMakeFiles/tugasros.dir/build.make tugas_ros/CMakeFiles/tugasros.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/listener.cpp.i:
+	cd /home/rafif/tugasros/build && $(MAKE) -f tugas_ros/CMakeFiles/listener.dir/build.make tugas_ros/CMakeFiles/listener.dir/src/listener.cpp.i
+.PHONY : src/listener.cpp.i
 
-src/main.s: src/main.cpp.s
+src/listener.s: src/listener.cpp.s
 
-.PHONY : src/main.s
+.PHONY : src/listener.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	cd /home/rafif/tugasros/build && $(MAKE) -f tugas_ros/CMakeFiles/tugasros.dir/build.make tugas_ros/CMakeFiles/tugasros.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/listener.cpp.s:
+	cd /home/rafif/tugasros/build && $(MAKE) -f tugas_ros/CMakeFiles/listener.dir/build.make tugas_ros/CMakeFiles/listener.dir/src/listener.cpp.s
+.PHONY : src/listener.cpp.s
+
+src/publisher.o: src/publisher.cpp.o
+
+.PHONY : src/publisher.o
+
+# target to build an object file
+src/publisher.cpp.o:
+	cd /home/rafif/tugasros/build && $(MAKE) -f tugas_ros/CMakeFiles/publisher.dir/build.make tugas_ros/CMakeFiles/publisher.dir/src/publisher.cpp.o
+.PHONY : src/publisher.cpp.o
+
+src/publisher.i: src/publisher.cpp.i
+
+.PHONY : src/publisher.i
+
+# target to preprocess a source file
+src/publisher.cpp.i:
+	cd /home/rafif/tugasros/build && $(MAKE) -f tugas_ros/CMakeFiles/publisher.dir/build.make tugas_ros/CMakeFiles/publisher.dir/src/publisher.cpp.i
+.PHONY : src/publisher.cpp.i
+
+src/publisher.s: src/publisher.cpp.s
+
+.PHONY : src/publisher.s
+
+# target to generate assembly for a file
+src/publisher.cpp.s:
+	cd /home/rafif/tugasros/build && $(MAKE) -f tugas_ros/CMakeFiles/publisher.dir/build.make tugas_ros/CMakeFiles/publisher.dir/src/publisher.cpp.s
+.PHONY : src/publisher.cpp.s
 
 # Help Target
 help:
@@ -457,15 +499,19 @@ help:
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... install/strip"
-	@echo "... tugasros"
+	@echo "... listener"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... publisher"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/listener.o"
+	@echo "... src/listener.i"
+	@echo "... src/listener.s"
+	@echo "... src/publisher.o"
+	@echo "... src/publisher.i"
+	@echo "... src/publisher.s"
 .PHONY : help
 
 

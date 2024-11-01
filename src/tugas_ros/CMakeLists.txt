@@ -206,5 +206,7 @@ include_directories(
 
 
 
-add_executable(tugasros src/main.cpp)
-target_link_libraries(tugasros ${catkin_LIBRARIES})
+add_executable(publisher src/publisher.cpp)
+target_link_libraries(publisher ${catkin_LIBRARIES})
+add_executable(listener src/listener.cpp)
+target_link_libraries(listener ${catkin_LIBRARIES})
